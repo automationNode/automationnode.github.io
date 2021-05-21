@@ -13,3 +13,24 @@
     66%{ transform: rotate(240deg);}
     100%{ transform: rotate(360deg);}
 }
+
+.divLogo{
+    width: 40%;
+    margin: 2%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.divTitle{
+    margin-top: 5%;
+    width: 70%;
+    border-radius: 10px;
+    padding: auto;
+}
+
+.divTexto{
+    padding: 2%;
+    margin: 3%;
+    width: 70%;
+    border-radius: 10px;
+}
