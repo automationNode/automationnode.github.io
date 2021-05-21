@@ -1,0 +1,15 @@
+#logo{
+    width: 15%;
+    margin: 2%;
+    position: relative;
+    animation-name: animationLogo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animationLogo {
+    0% { transform: rotate(0deg);}
+    33%{ transform: rotate(120deg);}
+    66%{ transform: rotate(240deg);}
+    100%{ transform: rotate(360deg);}
+}
