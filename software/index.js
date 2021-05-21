@@ -6,5 +6,5 @@ softwareWindows.addEventListener("click", function(){
 })
 
 softwareLinux.addEventListener("click", function(){
-    location.replace("")
+    location.replace("https://drive.google.com/file/d/1pOhg-ms7PEu8B_AyPQD3OX7vADNfovCa/view?usp=sharing")
 })
