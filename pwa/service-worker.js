@@ -8,6 +8,7 @@ self.addEventListener('install', function(event) {
         console.log('Cache open!');
         return cache.addAll([
           './index.html',
+          './hardware.html',
           './manifest.webManifest',
           './service-worker.js',
           './js/index.js',
