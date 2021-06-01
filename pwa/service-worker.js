@@ -11,9 +11,16 @@ self.addEventListener('install', function(event) {
           './manifest.webManifest',
           './service-worker.js',
           './js/index.js',
+          './js/ace.js',
+          './js/ext-languaje_tools.js',
+          './js/hardware.js',
+          './js/mode-python.js',
+          './js/theme-chrome.js',
           './images/icon.png',
           './images/icon.svg',
-          './css/bootstrap.css'
+          './css/bootstrap.css',
+          './css/hardware.css',
+          './css/index.css'
         ]);
       })
   );
