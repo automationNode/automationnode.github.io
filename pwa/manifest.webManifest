@@ -10,12 +10,6 @@
         "purpose": "any"
       },
       {
-        "src": "./images/icon-192px.png",
-        "type": "image/png",
-        "sizes": "192x192",
-        "purpose": "any"
-      },
-      {
         "src": "./images/icon-512px.png",
         "type": "image/png",
         "sizes": "512x512",
