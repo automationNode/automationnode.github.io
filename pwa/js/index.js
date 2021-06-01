@@ -13,13 +13,6 @@ if ('serviceWorker' in navigator) {
   var btnAdd = document.getElementById("btnAdd")
   let deferredPrompt;
 
-  window.addEventListener('beforeinstallprompt', function(event) {
-    // Prevent Chrome 67 and earlier from automatically showing the prompt
-    e.preventDefault();
-    // Stash the event so it can be triggered later.
-    deferredPrompt = e;
-  });
-
   // Installation must be done by a user gesture! Here, the button click
   btnAdd.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
