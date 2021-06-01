@@ -3,14 +3,14 @@
     "name": "Automation Node Software",
     "icons": [
       {
-        "src": "/images/icon.png",
+        "src": "./images/icon.png",
         "type": "image/png"
       }
     ],
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "background_color": "#3367D6",
     "display": "standalone",
-    "scope": "/",
+    "scope": "./",
     "theme_color": "#3367D6",
     "prefer_related_applications": false
 }
