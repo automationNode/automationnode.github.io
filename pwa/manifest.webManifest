@@ -3,12 +3,17 @@
     "name": "Automation Node Software",
     "icons": [
       {
-        "src": "./images/icon.png",
+        "src": "./images/icon-144px.png",
+        "type": "image/png",
+        "size": "144x144"
+      },
+      {
+        "src": "./images/icon-192px.png",
         "type": "image/png",
         "size": "192x192"
       },
       {
-        "src": "./images/icon.png",
+        "src": "./images/icon-512px.png",
         "type": "image/png",
         "size": "512x512"
       }

@@ -11,8 +11,10 @@ self.addEventListener('install', function(event) {
           './manifest.webManifest',
           './service-worker.js',
           './js/index.js',
-          './images/icon.ico',
           './images/icon.png',
+          './images/icon-144px.png',
+          './images/icon-192px.png',
+          './images/icon-512px.png',
           './css/bootstrap.css'
         ]);
       })
