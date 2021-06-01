@@ -7,13 +7,13 @@ self.addEventListener('install', function(event) {
       .then(function(cache) {
         console.log('Cache open!');
         return cache.addAll([
-          '/index.html',
-          '/manifest.webManifest',
-          '/service-worker.js',
-          '/js/index.js',
-          '/images/icon.ico',
-          '/images/icon.png',
-          '/css/bootstrap.css'
+          './index.html',
+          './manifest.webManifest',
+          './service-worker.js',
+          './js/index.js',
+          './images/icon.ico',
+          './images/icon.png',
+          './css/bootstrap.css'
         ]);
       })
   );
