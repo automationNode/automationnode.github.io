@@ -13,7 +13,7 @@ self.addEventListener('install', function(event) {
           './service-worker.js',
           './js/index.js',
           './js/ace.js',
-          './js/ext-languaje_tools.js',
+          './js/ext-language_tools.js',
           './js/hardware.js',
           './js/mode-python.js',
           './js/theme-chrome.js',
