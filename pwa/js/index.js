@@ -10,56 +10,30 @@ if ('serviceWorker' in navigator) {
     console.log('Service workers are not supported.');
   }
   
+  var btnAdd = document.getElementById("btnAdd")
   let deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  showInstallPromotion();
-  // Optionally, send analytics event that PWA install promo was shown.
-  console.log(`'beforeinstallprompt' event was fired.`);
-});
+  window.addEventListener('beforeinstallprompt', function(event) {
+    // Prevent Chrome 67 and earlier from automatically showing the prompt
+    e.preventDefault();
+    // Stash the event so it can be triggered later.
+    deferredPrompt = e;
+  });
 
-// buttonInstall.addEventListener('click', async () => {
-//   // Hide the app provided install promotion
-//   hideInstallPromotion();
-//   // Show the install prompt
-//   deferredPrompt.prompt();
-//   // Wait for the user to respond to the prompt
-//   const { outcome } = await deferredPrompt.userChoice;
-//   // Optionally, send analytics event with outcome of user choice
-//   console.log(`User response to the install prompt: ${outcome}`);
-//   // We've used the prompt, and can't use it again, throw it away
-//   deferredPrompt = null;
-// });
-
-window.addEventListener('appinstalled', () => {
-  // Hide the app-provided install promotion
-  hideInstallPromotion();
-  // Clear the deferredPrompt so it can be garbage collected
-  deferredPrompt = null;
-  // Optionally, send analytics event to indicate successful install
-  console.log('PWA was installed');
-});
-
-function getPWADisplayMode() {
-  const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-  if (document.referrer.startsWith('android-app://')) {
-    return 'twa';
-  } else if (navigator.standalone || isStandalone) {
-    return 'standalone';
-  }
-  return 'browser';
-}
-
-getPWADisplayMode()
-
-window.matchMedia('(display-mode: standalone)').addEventListener('change', (evt) => {
-  let displayMode = 'browser';
-  if (evt.matches) {
-    displayMode = 'standalone';
-  }
-  // Log display mode change to analytics
-  console.log('DISPLAY_MODE_CHANGED', displayMode);
-});
+  // Installation must be done by a user gesture! Here, the button click
+  btnAdd.addEventListener('click', (e) => {
+    // hide our user interface that shows our A2HS button
+    btnAdd.style.display = 'none';
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice
+      .then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
+  });
