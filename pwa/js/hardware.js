@@ -93,7 +93,7 @@ btn_delete_file.addEventListener("click",function(){
             codeEditor.setValue(files[firstFile])
             div_current_file.innerHTML = firstFile
 
-            fetch('https://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/delete_file', 
+            fetch('http://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/delete_file', 
             {
                 method: 'post',
                 mode:"no-cors",
@@ -178,7 +178,7 @@ btn_new_file.addEventListener("click", function(){
                         div_current_file.innerHTML = currentFile
                 })
                 div_files.appendChild(elements[fileName])
-                fetch('https://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/save_files', 
+                fetch('http://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/save_files', 
                 {
                     method: 'post',
                     mode:"no-cors",
@@ -194,7 +194,7 @@ btn_new_file.addEventListener("click", function(){
 btn_save.addEventListener("click", function(){
     files[currentFile] = codeEditor.getValue()
     console.log(files)
-    fetch('https://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/save_files', 
+    fetch('http://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/save_files', 
     {
         method: 'post',
         mode:"no-cors",
@@ -209,7 +209,7 @@ btn_save.addEventListener("click", function(){
 })
 
 btn_restart.addEventListener("click", function(){
-    fetch('https://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/restart', 
+    fetch('http://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/actions/restart', 
     {
         method: 'post',
         mode:"no-cors",
@@ -244,7 +244,7 @@ function connect() {
         btn_get_data_from_plc.innerText = "Get data from connection"
         onConnected.appendChild(btn_get_data_from_plc)
         btn_get_data_from_plc.addEventListener("click",function(){
-            fetch('https://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/data/files', {
+            fetch('http://' + ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value + '/data/files', {
                 mode:"cors"
             })
             .then(data => data.json())
