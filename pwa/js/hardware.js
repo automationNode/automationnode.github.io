@@ -379,5 +379,5 @@ btn_open_project.addEventListener("change", function(e){
 setTimeout(function(){
     setInterval(function(){
         connection.send(JSON.stringify({debug:true}))
-    }, 100); 
+    }, 300); 
 }, 2000)

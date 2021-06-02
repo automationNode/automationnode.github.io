@@ -1,0 +1,36 @@
+#logo{
+    width: 25%;
+    margin: 2%;
+    position: relative;
+    animation-name: animationLogo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animationLogo {
+    0% { transform: rotate(0deg);}
+    33%{ transform: rotate(120deg);}
+    66%{ transform: rotate(240deg);}
+    100%{ transform: rotate(360deg);}
+}
+
+.divLogo{
+    width: 40%;
+    margin: 2%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.divTitle{
+    margin-top: 5%;
+    width: 70%;
+    border-radius: 10px;
+    padding: auto;
+}
+
+.divTexto{
+    padding: 2%;
+    margin: 3%;
+    width: 70%;
+    border-radius: 10px;
+}
