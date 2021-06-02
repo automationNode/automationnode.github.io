@@ -231,7 +231,7 @@ function connect() {
     var ip2 = document.getElementById("ip2")
     var ip3 = document.getElementById("ip3")
 
-    connection = new WebSocket('ws://'+ ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value);
+    connection = new WebSocket('wss://'+ ip0.value + '.' + ip1.value + '.' + ip2.value + '.' + ip3.value);
 
     connection.onopen = function () {
         indicator.innerText = "Conected"
