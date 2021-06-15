@@ -2,9 +2,9 @@ var softwareWindows = document.getElementById("softwareWindows")
 var softwareLinux = document.getElementById("softwareLinux")
 
 softwareWindows.addEventListener("click", function(){
-    location.replace("https://mega.nz/file/M9ZTAawA#b-RNfpE8TR12bH407e6PjG0WiNeBCZJ3lqB7iKJ-FWg")
+    location.replace("https://mega.nz/file/VgoBUaAb#9y558bgmEq35jcXO7KbRYW4mnvu1IPz-3XOL_D_uNJg")
 })
 
 softwareLinux.addEventListener("click", function(){
-    location.replace("https://mega.nz/file/Q1BzgIaS#6Pare6s57HYgX1GmRIeiyzhH_Xe6snoVSDSId5bq-Eg")
+    location.replace("https://mega.nz/file/wowllKqL#T7WV0pfSqh9pjjeE3iOLJrH8ePXqcAWnuEEOcYmFxjE")
 })
