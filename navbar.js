@@ -11,10 +11,6 @@ navbar.innerHTML = `
     <li class="nav-item" style="margin-left:10%;">
       <a class="nav-link" href="https://automationnode.github.io/contact/index.html" style="padding: 3%;">Contacto</a>
     </li>
-
-    <li class="nav-item" style="margin-left:10%;">
-      <a class="nav-link" href="https://automationnode.github.io/pwa" style="padding: 3%;">PWA</a>
-    </li>
   </ul>
 </div>
 `

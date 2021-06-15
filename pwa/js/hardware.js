@@ -9,6 +9,7 @@ codeEditor.setOptions({
 });
 
 var navbar = document.getElementById("navbar")
+var btn_back = document.getElementById("btn_back")
 var btn_new_file = document.getElementById("btn_new_file")
 var btn_delete_file = document.getElementById("btn_delete_file")
 var btn_save = document.getElementById("btn_save")
@@ -56,6 +57,10 @@ for(let i in files){
     currentFile = firstFile
     div_current_file.innerHTML = firstFile
 
+btn_back.addEventListener("click", function(){
+    console.log(`Back Activado`)
+    location.replace("./index.html")
+})
 
 btn_delete_file.addEventListener("click",function(){
     //let _confirm = confirm("Are you secure to delete this currentFile?")
