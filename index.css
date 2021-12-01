@@ -7,6 +7,11 @@
     animation-iteration-count: infinite;
 }
 
+.hover:hover {
+    color: white;
+    background-color: rgb(3, 133, 255);
+}
+
 @keyframes animationLogo {
     0% {
         transform: rotate(0deg);
