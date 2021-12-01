@@ -2,7 +2,7 @@ var softwareWindows = document.getElementById("softwareWindows")
 var softwareLinux = document.getElementById("softwareLinux")
 
 softwareWindows.addEventListener("click", function() {
-    location.replace("https://mega.nz/file/VgoBUaAb#9y558bgmEq35jcXO7KbRYW4mnvu1IPz-3XOL_D_uNJg")
+    location.replace("https://mega.nz/file/RlpzBQaZ#LbOtpCfh3h0c5xqE8VF3saX0ud3NOTb0MNa8HMkpd6s")
 })
 
 softwareLinux.addEventListener("click", function() {
