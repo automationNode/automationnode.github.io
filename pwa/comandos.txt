@@ -1,3 +1,0 @@
-######Correr servidor local en python
-
-python -m http.server 1880  
